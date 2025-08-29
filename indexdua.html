@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Belajar Javascript</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="Judul">
+        <h2>FORM INPUT MASTER dan Stock DATA BARANG</h2>
+    </div>
+    <div class="container">
+        <form id="FormInput" action="" method="post">
+            <label for="Kode Produk">Kode Produk</label>
+            <input type="text" name="KodeProduk" id="KodeProduk" placeholder="Masukan kode produk" required/>
+            <label for="Nama Produk">Nama Produk</label>
+            <input type="text" name="NamaProduk" id="NamaProduk" placeholder="Masukan nama produk" />
+            <label for="Harga Produk">Harga Produk</label>
+            <input type="text" name="HargaProduk" id="HargaProduk" placeholder="Masukan harga produk" />
+            <label for="Satuan">Satuan</label>
+            <select id="Gelas">
+                <option value="Gelas">Gelas</option>
+                <option value="Pcs">Pcs</option>
+                <option value="Kardus">Kardus</option>
+            </select>
+            <label for="Kategori">Kategori</label>
+            <select id="kategori">
+                <option value="Makanan">Makanan</option>
+                <option value="Minuman">Minuman</option>
+            </select>
+            <label for="URL Gambar">URL Gambar</label>
+            <input type="text" name="UrlGambar" id="UrlGambar" placeholder="Masukan url" />
+            <label for="Stock Awal">Stock Awal</label>
+            <input type="number" name="StockAwal" id="StockAwal" />
+            <input type="hidden" id="editIndex" value="-1">
+            <button type="button" onclick="saveproduct()" class="button w-full">
+                Simpan
+            </button>`
+        </form>
+    </div>
+    <div class="table-respons">
+    <div class="container-output">
+        <table id="ProductTable" class="table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Kode produk</th>
+                    <th>Nama Produk</h>
+                        <th>Harga produk</th>
+                        <th>Satuan</th>
+                        <th>kategori produk</th>
+                        <th>Stock Awal</th>
+                        <th>Gambar</th>
+                        <th>Modify</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+    
+    <script src="function.js"></script>
+</body>
+</html>

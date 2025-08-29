@@ -1,0 +1,57 @@
+.Judul {
+    text-align: center;
+    font-family: poppins;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+}
+
+.container-output {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"], select, input[type="number"], input[type="url"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #848484;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background-color: #B9E5E8;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #4A628A;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,td {
+    border: 2px solid;
+    padding: 5px;
+}
+
+.table-respons {
+    overflow-x: scroll;
+}
+
+.color-stock{
+    background-color: red;
+}
+

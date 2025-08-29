@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <h2 id="hasil"></h2>
+    <div class="container">
+        <form action="" id="formdata">
+            <input type="number" id="no" value="0" disabled>
+            <input type="text" id="kodeproduk" value="MD-" disabled>
+            <button type="button" onclick="SubmitData()">Click me</button>
+        </form>
+    </div>
+   
+    
+
+    <!-- <script>
+        // var pilihan = parseInt(prompt("Masukan angka \n 1. Penjumlahan\n 2. Perkalian \n 3. Pembagian"));
+        // const x = parseInt(prompt("Masukan angka pertama"));
+        // const y = parseInt(prompt("Masukan angka kedua"));
+        
+        // switch (pilihan) {
+        //     case 1:
+        //         hasil = x + y;
+        //         alert(hasil);
+        //         break;
+        //     case 2:
+        //         hasil = x * y;
+        //         alert(hasil);
+        //         break;
+        //     case 3:
+        //         hasil = x / y;
+        //         alert(hasil);
+        //         break;
+        //     default:
+        // }
+        
+    
+        // const output = document.getElementById("name");
+        // output.innerHTML = hasil;
+        // window.alert(name);
+        // console.log("hasil : " , hasil);
+    </script> -->
+
+    <script>
+            let no = 0;
+            let data = [];
+            nokodeproduk = 0;
+            let text = "";
+
+            function SubmitData() {
+                var number = document.getElementById("no").value;
+                var kodeproduk = document.getElementById("kodeproduk").value;
+
+                number = no++;
+                kodeproduk = nokodeproduk++;
+
+                data.push = ({
+                    number,
+                    kodeproduk
+                });
+
+                data.forEach(myFunction);
+
+
+                document.getElementById("hasil").innerHTML = text;
+
+               
+                console.log(`No :${(number)}`, `Kode produk : MD-0${(kodeproduk)}`);
+            }
+
+            function myFunction(item, index) {
+                text += data.number + ": " + data.kodeproduk + "<br>";
+            }
+        </script>
+    </body>
+</html>
